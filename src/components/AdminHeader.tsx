@@ -41,6 +41,11 @@ const AdminHeader = () => {
                             주문관리
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/todos">
+                            todo
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </nav>

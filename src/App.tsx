@@ -16,6 +16,8 @@ import OrderManage from "./pages/admin/OrderManage/OrderManage";
 
 import { CallbacksType, StatesType } from "./AppContainer";
 import Loading from "./components/Loading";
+import LoginPage from "./pages/user/LoginPage";
+import RegisterPage from "./pages/user/RegisterPage";
 
 type PropsType = {
   states: StatesType;
@@ -41,6 +43,8 @@ const App = () => {
           <Route path="/admin/board/manage" element={<BoardManage />} />
           <Route path="/admin/order/manage" element={<OrderManage />} />
         </Route>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<RegisterPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

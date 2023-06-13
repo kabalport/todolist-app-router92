@@ -1,23 +1,26 @@
 import React from 'react';
 import { Container, Box, Typography, Button } from "@mui/material";
-
+import {Link} from "react-router-dom";
+import OrderItem from "./OrderItem";
 const OrderManage: React.FC = () => {
     return (
         <Container>
             <Box sx={{ py: 4 }}>
-                <Typography variant="h1" sx={{ mb: 4 }}>
+                <Typography variant="h5" sx={{ mb: 4 }}>
                     주문 관리
                 </Typography>
-                <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <Box sx={{ flex: '1 0 auto', mr: 2 }}>
-                        {/* Add your board management content here */}
-                    </Box>
-                    <Box sx={{ flexShrink: 0 }}>
-                        <Button variant="contained" color="primary">
-                            추가하기
-                        </Button>
-                    </Box>
-                </Box>
+                <div className="row">
+                    <div className="col p-3">
+                        <Link className="btn btn-primary" to="/todos/add">
+                            주문 추가
+                        </Link>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <ul className="list-group">{OrderItem}</ul>
+                    </div>
+                </div>
             </Box>
         </Container>
     );
