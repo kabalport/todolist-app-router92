@@ -22,7 +22,7 @@ type PropsType = {
   callbacks: CallbacksType;
 };
 
-const App = ({ states, callbacks }: PropsType) => {
+const App = () => {
   return (
     <Router>
       <Routes>
