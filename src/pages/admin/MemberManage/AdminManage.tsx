@@ -42,7 +42,7 @@ const AdminManage: React.FC = () => {
 
     return (
         <Container>
-            <h1>관리자 관리</h1>
+            <h1>회원관리</h1>
             <Button variant="contained" color="primary" onClick={() => navigate('/admin/register')}>관리자 등록</Button>
             {error ? (
                 <p>{error}</p>

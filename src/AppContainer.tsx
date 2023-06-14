@@ -133,7 +133,7 @@ const AppContainer = () => {
 
   const callbacks: CallbacksType = { fetchTodoList, addTodo, deleteTodo, updateTodo, toggleDone };
   const states: StatesType = { todoList, isLoading };
-  return <App callbacks={callbacks} states={states} />;
+  return <App />;
 };
 
 export default AppContainer;
